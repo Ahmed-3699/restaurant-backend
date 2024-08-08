@@ -22,8 +22,11 @@ then(()=>{
     console.log("Db running");
 })
 
+app.get('/', (req, res) => {
+    req.send("Server Running")
+})
 
 
-app.listen(2000, ()=>{
+app.listen(3000, ()=>{
     console.log("Server Running");
 })
